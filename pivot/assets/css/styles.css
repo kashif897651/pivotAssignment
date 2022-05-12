@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap');
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    background-color: #6053ca;
+    color: #ffffff;
+    border-radius: 30px;
+    margin: 0 auto;
+    width: 90%;
+    padding: 20px;
+    position: relative;
+    margin-top: 60px;
+}
+
+.yellow_label {
+    background: #fdb50d;
+    /* width: auto; */
+    display: inline-block;
+    position: absolute;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    top: 0;
+    color: #000000;
+    top: -38px;
+    left: 50px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    background-color: #7b6fd1;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: 20px 0;
+}
+
+input[type=radio]:before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+input[type=radio] {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: relative;
+    outline: none;
+    background: #ffffff;
+}
+
+input[type=radio]:checked:before {
+    background: #6051c4;
+    /* background-color: red; */
+}
+
+.radioButton label {
+    position: absolute;
+    margin: 0 20px;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.radioButton label p {
+    margin: 5px 0;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.price span {
+    margin: 0;
+    color: #ffffff;
+    background: #5f53cf;
+    text-align: center;
+    border-radius: 8px;
+    padding: 5px 10px;
+    font-weight: 500;
+    font-size: 15px;
+    display: inline-block;
+}
+
+.price {
+    color: #fbad39;
+    font-size: 40px;
+    font-weight: 900;
+    /* text-align: center; */
+}
+
+.price del {
+    margin-left: 10px;
+    font-size: 25px;
+}
+
+.price p {
+    margin: 0px 0 -20px;
+}
+
+.per_session_price p {
+    margin: 5px 0;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.per_session_price span {
+    margin: 5px 0;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+select {
+    padding: 5px 20px 5px 10px;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid #ffffff;
+    color: #ffffff;
+    outline: unset;
+    font-size: 18px;
+    margin: 10px;
+    font-weight: 500;
+}
+
+.btn {
+    color: #b6aeea;
+    background: transparent;
+    border: 0;
+    font-size: 20px;
+    margin: 20px;
+    cursor: pointer;
+    padding: 10px 23px;
+    border-radius: 20px;
+    font-weight: 900;
+}
+
+.btn.active {
+    background-color: #083090;
+    color: #ffffff;
+}
